@@ -1,0 +1,21 @@
+﻿@model lab5.Models.UserModel
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card">
+                <img src="@Model.Image" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-title">Username: @Model.FullName</p>
+                    <p class="card-text">Email: @Model.Email</p>
+                    <p class="card-text">Login: @Model.Login</p>
+                    <p class="card-text">Phone: @Model.Phone</p>
+                    <a asp-controller="Auth" asp-action="Logout" class="btn btn-primary" id="logoutBtn">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

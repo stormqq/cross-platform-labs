@@ -1,0 +1,14 @@
+@lab13_1_HostAddress = http://localhost:3001
+
+POST {{lab13_1_HostAddress}}/labs/lab1
+Accept: application/json
+
+###
+
+POST {{lab13_1_HostAddress}}/labs/lab2
+Accept: application/json
+
+###
+
+POST {{lab13_1_HostAddress}}/labs/lab3
+Accept: application/json
